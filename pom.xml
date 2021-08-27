@@ -12,9 +12,14 @@
     <description>SpringClouds系统知识</description>
 
     <modules>
+        <!--公共模块-->
         <module>common-core</module>
+        <!--订单模块-->
+        <module>order-feign</module>
         <module>order-api</module>
         <module>order-server</module>
+        <!--用户模块-->
+        <module>user-feign</module>
         <module>user-api</module>
         <module>user-server</module>
     </modules>

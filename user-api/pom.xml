@@ -23,7 +23,8 @@
     <dependencies>
         <dependency>
             <groupId>com.clouds.dsz</groupId>
-            <artifactId>common-core</artifactId>
+            <artifactId>user-feign</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--web容器-->
         <dependency>

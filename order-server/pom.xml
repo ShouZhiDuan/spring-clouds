@@ -22,7 +22,8 @@
     <dependencies>
         <dependency>
             <groupId>com.clouds.dsz</groupId>
-            <artifactId>common-core</artifactId>
+            <artifactId>order-feign</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

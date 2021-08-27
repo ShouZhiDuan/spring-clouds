@@ -10,31 +10,25 @@
 
 
     <groupId>com.clouds.dsz</groupId>
-    <artifactId>user-server</artifactId>
+    <artifactId>user-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
     <modelVersion>4.0.0</modelVersion>
-    <name>user-server</name>
-    <description>用户服务模块</description>
+    <name>user-feign</name>
+    <description>用户服务抽象层</description>
 
 
     <dependencies>
         <dependency>
             <groupId>com.clouds.dsz</groupId>
-            <artifactId>user-feign</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>
 
-
     <build>
-        <finalName>${project.name}</finalName>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

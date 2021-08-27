@@ -4,6 +4,6 @@
 ## 二、study分支集成常用SpringCLouds组件
 
 ## 三、项目模块资源分配
-### 端口
-* order-api   8080
-* user-api    8081
+### 1、端口
+* order-api:8080
+* user-api:8081

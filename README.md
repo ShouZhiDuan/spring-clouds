@@ -4,7 +4,7 @@
 
 ## 二、study分支集成常用SpringCLouds组件
 
-## 三、项目模块
+## 三、项目学习模块
 ### common-core               公共模块
 ### eureka-server-001         服务注册中心(后续可以做eureka集群高可用)
 ### order-api                 订单接口模块

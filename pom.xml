@@ -30,6 +30,7 @@
     <!--全局参数-->
     <properties>
         <java.version>1.8</java.version>
+        <web.version>2.5.3</web.version>
         <hutool.version>5.4.0</hutool.version>
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
@@ -83,6 +84,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--web容器-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${web.version}</version>
+            </dependency>
+            <!--本地依赖-->
             <dependency>
                 <groupId>com.clouds.dsz</groupId>
                 <artifactId>common-core</artifactId>

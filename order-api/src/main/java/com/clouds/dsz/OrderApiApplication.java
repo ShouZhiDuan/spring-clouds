@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 订单接口启动入口
  */
 @SpringBootApplication
-public class OrderApiBootstrap {
+public class OrderApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderApiBootstrap.class, args);
+        SpringApplication.run(OrderApiApplication.class, args);
     }
 
 }

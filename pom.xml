@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
+        <version>2.5.4</version>
         <relativePath/>
     </parent>
 
@@ -37,7 +37,8 @@
         <java.version>1.8</java.version>
         <web.version>2.5.3</web.version>
         <hutool.version>5.4.0</hutool.version>
-        <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
+        <!--<spring-cloud.version>Hoxton.SR5</spring-cloud.version>-->
+        <spring-cloud.version>2020.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
     </properties>
 

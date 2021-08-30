@@ -35,3 +35,5 @@
 * com.clouds.dsz.controller.RibbonDemoController
 * com.clouds.dsz.OrderServerApplication.restTemplate
 * com.clouds.dsz.RibbonTest.contextLoads
+
+#### 2、Ribbon自定义负载规则

@@ -30,4 +30,8 @@
 * [Eureka客户端](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#service-discovery-eureka-clients)
 
 ### 二、Ribbon
+
 ####1、Ribbon基于eureka的使用
+* com.clouds.dsz.controller.RibbonDemoController
+* com.clouds.dsz.OrderServerApplication.restTemplate
+* com.clouds.dsz.RibbonTest.contextLoads

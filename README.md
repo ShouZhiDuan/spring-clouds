@@ -31,7 +31,7 @@
 
 ### 二、Ribbon
 
-####1、Ribbon基于eureka的使用
+#### 1、Ribbon基于eureka的使用
 * com.clouds.dsz.controller.RibbonDemoController
 * com.clouds.dsz.OrderServerApplication.restTemplate
 * com.clouds.dsz.RibbonTest.contextLoads

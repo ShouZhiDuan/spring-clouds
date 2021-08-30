@@ -20,10 +20,21 @@
 
 
     <dependencies>
+        <!--本地feign工程-->
         <dependency>
             <groupId>com.clouds.dsz</groupId>
             <artifactId>order-feign</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--web容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--eureka客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 

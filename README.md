@@ -17,9 +17,11 @@
 
 ## 四、项目模块资源分配
 ### 1、端口
-* order-api:8080
-* user-api:8081
-* eureka-server-001:8082
+* order-api:8061
+* order-server:8062
+* user-api:8071
+* user-server:8072
+* eureka-server-001:8081
 
 
 ## 五、常用组件

@@ -25,5 +25,9 @@
 
 
 ## 五、常用组件
-### 1、Ribbon
+### 一、Eureka
+* [Eureka服务端](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#spring-cloud-eureka-server)
+* [Eureka客户端](https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#service-discovery-eureka-clients)
 
+### 二、Ribbon
+####1、Ribbon基于eureka的使用

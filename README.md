@@ -13,6 +13,8 @@
 ### user-api                  用户接口模块
 ### user-feign                用户服务抽象模块
 ### user-server               用户服务模块
+### ribbon-server             Ribbon服务端(URL直连测试调用)
+### ribbon-client             Ribbon客户端(URL直连测试调用)
 
 
 ## 四、项目模块资源分配

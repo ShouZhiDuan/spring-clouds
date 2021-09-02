@@ -41,34 +41,7 @@
 * com.clouds.dsz.OrderServerApplication.restTemplate
 * com.clouds.dsz.RibbonTest.contextLoads
 
-#### 2、Ribbon自定义负载规则
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### 2、Ribbon不基于eureka的使用
+* com.ribbon.dsz.RibbonClientApplication.restTemplate
+* com.ribbon.dsz.controller.RibbonClientController
+* com.ribbon.dsz.controller.RibbonServerController.test

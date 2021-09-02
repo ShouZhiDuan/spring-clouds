@@ -16,12 +16,17 @@
 
 
 ## 四、项目模块资源分配
-### 1、端口
+### 1、订单模块
 * order-api:8061
 * order-server:8062
+### 2、用户模块
 * user-api:8071
 * user-server:8072
+### 3、注册中心模块
 * eureka-server-001:8081
+### 4、Ribbon模块
+* ribbon-server:8091
+* ribbon-client:8092
 
 
 ## 五、常用组件
@@ -37,3 +42,33 @@
 * com.clouds.dsz.RibbonTest.contextLoads
 
 #### 2、Ribbon自定义负载规则
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

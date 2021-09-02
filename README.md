@@ -49,3 +49,8 @@
 * com.ribbon.dsz.RibbonClientApplication.restTemplate
 * com.ribbon.dsz.controller.RibbonClientController
 * com.ribbon.dsz.controller.RibbonServerController.test
+
+### 三、OpenFeign
+#### 1、实现本地listOfServers配置负载均衡调用以及制定url直连调用
+* openfeogn-client工程->classpath:resources/application.properties
+* com.openfeign.dsz.rpc.RibbonTestService

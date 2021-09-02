@@ -23,15 +23,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
+        </dependency>-->
+        <!--Openfeign-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+            <version>10.10.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>3.0.3</version>
         </dependency>
+        <!--LoadBalancer-->
         <!--注意：Hoxton或者2020.X版本并不是配置spring-cloud-starter-loadbalancer，而是配置spring-cloud-starter-netflix-ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

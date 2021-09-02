@@ -32,12 +32,12 @@
     </modules>
 
     <!--统一SpringBoot版本-->
-    <parent>
+<!--    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.4</version>
         <relativePath/>
-    </parent>
+    </parent>-->
 
     <!--全局参数-->
     <properties>
@@ -46,7 +46,7 @@
         <hutool.version>5.4.0</hutool.version>
         <!--<spring-cloud.version>Hoxton.SR5</spring-cloud.version>-->
         <spring-cloud.version>2020.0.3</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
+        <spring-boot.version>2.5.4</spring-boot.version>
     </properties>
 
 
@@ -81,7 +81,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--Spring Cloud 相关依赖-->
+            <!--Spring Cloud Netflix相关依赖-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -89,14 +89,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--Spring Cloud Alibaba 相关依赖-->
- <!--           <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba.version}</version>
+            <!--SpringBoot相关依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>-->
+            </dependency>
             <!--web容器-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

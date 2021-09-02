@@ -24,6 +24,9 @@
         <module>user-feign</module>
         <module>user-api</module>
         <module>user-server</module>
+        <!--ribbon模块-->
+        <module>ribbon-server</module>
+        <module>ribbon-client</module>
     </modules>
 
     <!--统一SpringBoot版本-->

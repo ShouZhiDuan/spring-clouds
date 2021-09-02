@@ -27,6 +27,8 @@
         <!--ribbon模块-->
         <module>ribbon-server</module>
         <module>ribbon-client</module>
+        <!--openfeign模块-->
+        <module>openfeign-client</module>
     </modules>
 
     <!--统一SpringBoot版本-->
@@ -88,13 +90,13 @@
                 <scope>import</scope>
             </dependency>
             <!--Spring Cloud Alibaba 相关依赖-->
-            <dependency>
+ <!--           <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency>-->
             <!--web容器-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

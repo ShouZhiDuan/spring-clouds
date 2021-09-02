@@ -29,6 +29,8 @@
 ### 4、Ribbon模块
 * ribbon-server:8091
 * ribbon-client:8092
+### 5、Openfeign模块
+* openfeign-client:8190
 
 
 ## 五、常用组件

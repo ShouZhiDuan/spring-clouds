@@ -1,12 +1,10 @@
 package com.clouds.dsz.controller;
 
 import com.clouds.dsz.dto.order.OrderDTO;
+import com.clouds.dsz.feign_client.OrderServiceFeignClient;
 import com.clouds.dsz.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Auther: ShouZhi@Duan
@@ -16,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/order")
 public class OrderController {
 
-    @Autowired(required = false)
-    private OrderService orderService;
+    @Autowired
+    private OrderServiceFeignClient orderService;
 
     /**
      * 保存订单
@@ -27,4 +25,11 @@ public class OrderController {
         return orderService.save(order);
     }
 
+    /**
+     * 查询订单
+     */
+    @GetMapping("/details")
+    public OrderDTO details(){
+        return orderService.order();
+    }
 }

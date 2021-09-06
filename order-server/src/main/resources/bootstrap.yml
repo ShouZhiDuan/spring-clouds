@@ -1,0 +1,16 @@
+spring:
+  application:
+     name: order-server
+
+server:
+   port: 8062
+
+eureka:
+   client:
+     serviceUrl:
+       defaultZone: http://localhost:8081/eureka/
+
+user-api:
+  ribbon:
+    listOfServers: localhost:8071,localhost:8072
+

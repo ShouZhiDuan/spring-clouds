@@ -42,11 +42,13 @@
     <!--全局参数-->
     <properties>
         <java.version>1.8</java.version>
-        <web.version>2.5.3</web.version>
+        <!--<web.version>2.5.3</web.version>-->
+        <web.version>2.3.4.RELEASE</web.version>
         <hutool.version>5.4.0</hutool.version>
-        <!--<spring-cloud.version>Hoxton.SR5</spring-cloud.version>-->
-        <spring-cloud.version>2020.0.3</spring-cloud.version>
-        <spring-boot.version>2.5.4</spring-boot.version>
+        <!--<spring-cloud.version>2020.0.3</spring-cloud.version>-->
+        <!--<spring-boot.version>2.5.4</spring-boot.version>-->
+        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
 
 

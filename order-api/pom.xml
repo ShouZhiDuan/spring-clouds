@@ -21,6 +21,7 @@
 
 
     <dependencies>
+        <!--内部仓库-->
         <dependency>
             <groupId>com.clouds.dsz</groupId>
             <artifactId>order-feign</artifactId>
@@ -36,11 +37,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!--openfeign-->
+        <!--hystrix-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>3.0.3</version>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 

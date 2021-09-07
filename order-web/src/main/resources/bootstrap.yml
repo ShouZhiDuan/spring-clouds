@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: order-api
+    name: order-web
   main:
     allow-bean-definition-overriding: true
 
@@ -12,3 +12,19 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka/
     registry-fetch-interval-seconds: 5
+
+
+logging:
+  level: #添加feign调用日志
+    com.clouds.dsz.feign_client.OrderServiceFeignClient: debug
+
+#feign的优化
+feign:
+  compression:
+    request:
+      enabled: true
+  #    min-request-size: 1
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false

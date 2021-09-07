@@ -10,6 +10,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Map;
+
 @EnableFeignClients(basePackages = {"com.clouds.dsz.service"})
 @SpringBootApplication
 public class OrderServerApplication {
@@ -27,6 +29,9 @@ public class OrderServerApplication {
         ConfigurableApplicationContext run = SpringApplication.run(OrderServerApplication.class, args);
         OrderService bean = run.getBean(OrderService.class);
         String[] beanNamesForType = run.getBeanNamesForType(OrderService.class);
+        OrderService orderService = (OrderService) run.getBean("orderServiceImpl");
+        OrderService orderService2 = (OrderService) run.getBean("com.clouds.dsz.service.OrderService");
+        Map<String, OrderService> beansOfType = run.getBeansOfType(OrderService.class);
         System.out.println(bean);
     }
 

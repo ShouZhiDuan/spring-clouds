@@ -17,12 +17,12 @@
         <!--注册中心-->
         <module>eureka-server-001</module>
         <!--订单模块-->
-        <module>order-feign</module>
         <module>order-api</module>
+        <module>order-web</module>
         <module>order-server</module>
         <!--用户模块-->
-        <module>user-feign</module>
         <module>user-api</module>
+        <module>user-web</module>
         <module>user-server</module>
         <!--ribbon模块-->
         <module>ribbon-server</module>

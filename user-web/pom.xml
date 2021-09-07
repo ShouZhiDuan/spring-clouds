@@ -10,20 +10,26 @@
 
 
     <groupId>com.clouds.dsz</groupId>
-    <artifactId>order-server</artifactId>
+    <artifactId>user-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+
     <modelVersion>4.0.0</modelVersion>
-    <name>order-server</name>
-    <description>订单服务模块</description>
+    <name>user-web</name>
+    <description>用户服务接口模块</description>
 
 
     <dependencies>
-        <!--本地feign工程-->
+        <!--本地工程-->
         <dependency>
             <groupId>com.clouds.dsz</groupId>
             <artifactId>order-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.clouds.dsz</groupId>
+            <artifactId>user-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--web容器-->
@@ -58,14 +64,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>6</source>
-                    <target>6</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>

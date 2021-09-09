@@ -18,4 +18,10 @@ public class UserServiceImpl implements UserService {
         log.info("用户注册成功：" + JSON.toJSONString(userDTO));
         return userDTO;
     }
+
+    @Override
+    public UserDTO user() {
+        System.out.println(1/0);
+        return new UserDTO("周杰伦","123456");
+    }
 }

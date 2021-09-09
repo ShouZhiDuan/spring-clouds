@@ -20,15 +20,17 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderDTO save(OrderDTO orderDTO) {
-        log.info("订单保存成功：" + JSON.toJSONString(orderDTO));
+        System.out.println("======保存订单======");
+        int a = 1/0;
         orderDTO.setOrderName(orderDTO.getOrderName()+ " " + port);
         return orderDTO;
     }
 
     @Override
     public OrderDTO order() {
-        log.info("======查询订单======");
-        return new OrderDTO("订单名称 " + port);
+        System.out.println("======查询订单======");
+        int a = 1/0;
+        return new OrderDTO("订单名称 " + port, 1);
     }
 
 

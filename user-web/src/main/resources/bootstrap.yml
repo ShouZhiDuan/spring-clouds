@@ -9,3 +9,56 @@ eureka:
   client:
     serviceUrl:
        defaultZone: http://localhost:8081/eureka/
+
+
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+  hystrix:
+    enabled: true
+
+# Hystrix相关配置
+# 参考：com.netflix.hystrix.HystrixCommandProperties
+hystrix:
+  command:
+    default:  #全局配置，feignclient#method(param)
+      execution:
+        timeout:
+          enable: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000 #调用超时出发降级
+      #熔断配置
+      circuitBreaker:
+        requestVolumeThreshold: 3 #请求多少次
+        sleepWindowInMilliseconds: 8000 #熔断时长，过了当前时间会处于半开
+        errorThresholdPercentage: 10 #50次内出错率为30%就会触发熔断
+      metrics:
+        rollingStats:
+          timeInMilliseconds: 10000 # 滚动窗口，默认为 10000 ms
+
+#    OrderServiceFeignClient#orders():
+#      execution:
+#        isolation:
+#          strategy: SEMAPHORE
+#          semaphore:
+#            maxConcurrentRequests: 10
+#    OrderServiceFeignClient#insert():
+#      execution:
+#        isolation:
+#          strategy: THREAD
+#  threadpool:
+#    order-service:
+#      coreSize: 2
+#      maxQueueSize: 1000
+#      queueSizeRejectionThreshold:  800
+
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

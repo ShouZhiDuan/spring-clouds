@@ -60,6 +60,11 @@
 * 熔断->降级
 * 超时->降级
 * CPU 内存 线程资源隔离
+#### 2、使用案例
+* Hystrix作用在具体方法上
+com.clouds.dsz.controller.HystrixCommandController
+* Hystrix作用在feign上
+com.clouds.dsz.controller.HystrixFeignController
 
 
 

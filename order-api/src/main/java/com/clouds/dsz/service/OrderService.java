@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @Auther: ShouZhi@Duan
  * @Description: 订单接口
  */
-@FeignClient(name = "order-server")
+@FeignClient(name = "order-server",fallback = OrderServcideFeignFallBack.class)
 public interface OrderService {
     /**
      * 保存订单
      */
      @PostMapping("/order/save")
-     OrderDTO save(@RequestBody OrderDTO orderDTO);
+     OrderDTO save(@RequestBody OrderDTO orderDTO) throws InterruptedException;
 
     /**
      * 查询订单

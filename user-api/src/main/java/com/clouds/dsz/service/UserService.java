@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @Auther: ShouZhi@Duan
  * @Description: 用户服务接口
  */
-@FeignClient("user-server")
+@FeignClient(value = "user-server",contextId = "com.clouds.dsz.service.UserService")
 public interface UserService {
     /**
      * 用户注册
